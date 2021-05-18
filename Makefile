@@ -1,5 +1,5 @@
-SOURCE_FILE = JavaHelloWorld.java
-OUTPUT = HelloWorld
+SOURCE_FILE = EvenOdd.java
+OUTPUT = EvenOdd
 
 all: 
 	javac ${SOURCE_FILE}
