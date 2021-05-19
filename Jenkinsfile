@@ -8,7 +8,7 @@ node {
     stage ('Test')
     {
         echo 'Testeando...'
-        sh 'make execute'
+        sh 'make test'
     }
     stage ('Deploy')
     {
