@@ -1,15 +1,18 @@
 SOURCE_FILE = EvenOdd.java
 OUTPUT = EvenOdd
+NUMBER ?= 1
+RESULTS=results.txt
 
 all: 
-	javac ${SOURCE_FILE}
+	@javac ${SOURCE_FILE}
 
 execute:
-	java ${OUTPUT}
+	@java ${OUTPUT}
 
 test:
-	java junit.textui.TestRunner ${OUTPUT}
+	@bash test.sh
 
 
 clean:
-	rm ${OUTPUT}.class
+	@rm ${OUTPUT}.class
+	@>${RESULTS}
