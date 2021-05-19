@@ -12,14 +12,8 @@ node {
     }
     stage ('Deploy')
     {
-         when {
-              expression {
-                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
-              }
-            }
-            steps {
-                echo 'Deployando...'
-                sh 'make clean'
-            }
+         if(currentBuild.result == null || currentBuild.result == 'SUCCESS'){
+            echo 'Deployando...'
+         }
     }
 }
