@@ -1,5 +1,5 @@
 #!/bin/bash
-filename='test.txt'
+filename=test.txt
 results=results.txt
 expected_results=expected_results.txt
 n=1
