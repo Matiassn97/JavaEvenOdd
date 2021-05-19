@@ -7,5 +7,9 @@ all:
 execute:
 	java ${OUTPUT}
 
+test:
+	java junit.textui.TestRunner ${OUTPUT}
+
+
 clean:
 	rm ${OUTPUT}.class
